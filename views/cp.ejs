@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="one net software info iot projects">
+    <meta name="author" content="onsiIndia">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>Control panel | Team ONSI</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for cp -->
+    <link href="./css/cp.css" rel="stylesheet">
+
+    <!-- Custom styles for carousel -->
+    <link href="./css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#">Team ONSI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Control Panel</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main">
+
+        <div class="container jumbotron pt-0">
+            <h1 class="d-none d-md-block text-center py-2" style="font-size:3rem;">
+                Control Panel
+            </h1>
+            <h3 class="d-block d-md-none text-center py-2">
+                Control Panel
+            </h3>
+            <hr class="my-2">
+            <section class="mx-auto" style="max-width:350px;">
+                <table class="table table-hover table-responsive table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Device</th>
+                            <th scope="col" colspan="2">Controller</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Led</td>
+                            <td>
+                                <form>
+                                    <button type="submit" class="btn btn-outline-success" name="led" value="on">ON</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form>
+                                    <button type="submit" class="btn btn-outline-danger" name="led" value="off">OFF</button>
+                                </form>
+                            </td>
+                            <td>
+                                <%=ledStatus %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Light</td>
+                            <td>
+                                <form>
+                                    <button type="submit" class="btn btn-outline-success" name="light" value="on">ON</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form>
+                                    <button type="submit" class="btn btn-outline-danger" name="light" value="off">OFF</button>
+                                </form>
+                            </td>
+                            <td>
+                                <%=lightStatus %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fan</td>
+                            <td>
+                                <form>
+                                    <button type="submit" class="btn btn-outline-success" name="fan" value="on">ON</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form>
+                                    <button type="submit" class="btn btn-outline-danger" name="fan" value="off">OFF</button>
+                                </form>
+                            </td>
+                            <td>
+                                <%=fanStatus %>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Charger</td>
+                            <td>
+                                <form>
+                                    <button type="submit" class="btn btn-outline-success" name="charger" value="on">ON</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form>
+                                    <button type="submit" class="btn btn-outline-danger" name="charger" value="off">OFF</button>
+                                </form>
+                            </td>
+                            <td>
+                                <%=chargerStatus %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Extension</td>
+                            <td>
+                                <form>
+                                    <button type="submit" class="btn btn-outline-success" name="extension" value="on">ON</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form>
+                                    <button type="submit" class="btn btn-outline-danger" name="extension" value="off">OFF</button>
+                                </form>
+                            </td>
+                            <td>
+                                <%=extensionStatus %>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <p class="text-right text-primary">
+                Developed By ONSI <br />
+                Supported By OOUG <br/>
+                Powered By Ginnovation Club
+            </p>
+        </div>
+
+        </div>
+    </main>
+    <!-- /.container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="./bootstrap/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

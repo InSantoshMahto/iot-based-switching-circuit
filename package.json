@@ -1,0 +1,19 @@
+{
+    "name": "home_automation_system",
+    "version": "1.0.0",
+    "description": "Home Automation Sysytem. developed by Team ONSI for %th Semester Minor Projects",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "onsi.in, onsiIndia, Team ONSI, insantoshmahto"
+    ],
+    "author": "onsiIndia",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "rpi-gpio": "^1.0.0"
+    }
+}
